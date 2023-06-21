@@ -1,0 +1,23 @@
+.menu-sub_title{
+  padding:  12px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  .material-icons{
+    font-size:16px;
+    line-height: normal;
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+  }
+}
+.menu-sub-wrapper{
+  padding-left: 28px;
+  .menu-sub_item{
+    padding:  12px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+  }
+}
