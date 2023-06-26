@@ -4,11 +4,13 @@ import { LayoutComponent } from './layout/layout.component'
 import { ListComponent } from './table/list/list.component'
 import { TableComponent } from './table/table.component'
 import { FullListComponent } from './table/full-list/full-list.component'
+import { authGuard } from '../auth/auth.guard'
 
 const routes: Routes = [
   {
     path: 'pages',
     component: LayoutComponent,
+    canActivate: [authGuard],
     children: [
       {
         path: '',
