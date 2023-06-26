@@ -15,6 +15,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTreeModule } from '@angular/material/tree';
 import { SlideMenuComponent } from './slide-menu/slide-menu.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [SlideMenuComponent],
@@ -35,6 +36,7 @@ import { SlideMenuComponent } from './slide-menu/slide-menu.component';
     MatIconModule,
     MatMenuModule,
     MatTreeModule,
+    RouterModule
   ],
   exports: [
     CommonModule,
@@ -54,6 +56,7 @@ import { SlideMenuComponent } from './slide-menu/slide-menu.component';
     MatMenuModule,
     MatTreeModule,
     SlideMenuComponent,
+    RouterModule,
   ],
 })
 export class ShareModule {}

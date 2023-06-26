@@ -5,9 +5,10 @@ import { LayoutComponent } from './layout/layout.component';
 import { ShareModule } from '../share/share.module';
 import { TableComponent } from './table/table.component';
 import { ListComponent } from './table/list/list.component';
+import { FullListComponent } from './table/full-list/full-list.component';
 
 @NgModule({
-  declarations: [LayoutComponent, TableComponent, ListComponent],
+  declarations: [LayoutComponent, TableComponent, ListComponent, FullListComponent],
   imports: [CommonModule, ShareModule, PagesRoutingModule],
 })
 export class PagesModule {}
