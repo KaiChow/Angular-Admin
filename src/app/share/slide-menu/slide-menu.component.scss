@@ -19,5 +19,18 @@
     cursor: pointer;
     overflow: hidden;
     display: flex;
+
+  }
+  a{
+    :visited{
+      color: #000;
+    }
+    :hover{
+      color: #000;
+    }
+    color: #000;
+  }
+  a.active{
+    color: #1049c4;
   }
 }
