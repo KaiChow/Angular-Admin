@@ -1,0 +1,39 @@
+<div class="login-container">
+  <section class="login-panel">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <h3>登录</h3>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form class="login-form" [formGroup]="loginControl">
+          <mat-form-field class="login-full-width">
+            <mat-label>账号</mat-label>
+            <input
+              matInput
+              placeholder="请输入账号"
+              required
+              name="username"
+              formControlName="username"
+            />
+          </mat-form-field>
+          <mat-form-field class="login-full-width">
+            <mat-label>密码</mat-label>
+            <input
+              matInput
+              type="password"
+              formControlName="password"
+              placeholder="请输入密码"
+              required
+              name="password"
+            />
+          </mat-form-field>
+          <button mat-raised-button color="primary" (click)="handleSubmit()">
+            登录
+          </button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </section>
+</div>
